@@ -1,12 +1,26 @@
 body {
     font-family:'Open Sans', sans-serif;
     background-color:#efefef;
+    font-size:1.25em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-/*    font-family:'Anonymous Pro', monospace;*/
+    font-family:'Anonymous Pro', monospace;
 }
 
-.container-xl {
+.container-fluid {
     background-color:#fff;
+}
+
+.active {
+    color:red;
+    font-weight:bold;
+}
+
+.lead {
+    font-size:1.25em;
+}
+
+img {
+    max-width:100%;
 }

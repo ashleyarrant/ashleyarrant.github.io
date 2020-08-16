@@ -4,54 +4,61 @@
         <!-- meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Ashley Arrant | About</title>
+        <title>Ashley Arrant | About Me</title>
         
         <!-- stylesheets & fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Anonymous+Pro:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/config.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/config.css" />
         
         <!-- jQuery plugins & scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <script src="scripts/config.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/f01a108247.js" crossorigin="anonymous"></script>
+        <script src="/scripts/config.js"></script>
+        
+        
     </head>
-    <body data-aos="fade">
+    <body>
         <div class="container-fluid">
             
             <nav class="navbar navbar-expand-md navbar-light" role="navigation">
-                <a href="/index.html" class="navbar-brand"><img src="https://via.placeholder.com/30" height="30"/> Ashley Arrant</a>
+                <a href="index.html" class="navbar-brand"><img src="https://via.placeholder.com/30" height="30"/> Ashley Arrant</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse  justify-content-end text-right" id="navcontent">
-                    <a href="/resume.html" class="nav-link nav-item">Resume</a>
-                    <a href="/about.html" class="nav-link nav-item active">About</a>
-                    <a href="/portfolio.html" class="nav-link nav-item">Portfolio</a>
+                    <a href="resume.html" class="nav-link nav-item">Resume</a>
+                    <a href="about.html" class="nav-link nav-item">About</a>
+                    <a href="portfolio.html" class="nav-link nav-item">Portfolio</a>
                 </div>
             </nav>
             
-            <div class="jumbotron mb-0 text-center">
+            <div class="jumbotron mb-0 text-center" data-aos="fade-up">
                 <h1 class="display-4">About Me</h1>
             </div>
             
             <p class="lead">I'll put some kind of content here at some point i swear.</p>
             
-            <footer class="text-center p-4">
+            <footer class="text-center p-4" data-aos="fade" data-aos-anchor-placement="top-bottom">
                 <h1>Ashley Arrant</h1>
                 
                 <nav class="nav justify-content-center">
-                    <a href="/index.html" class="nav-link nav-item">home</a>
-                    <a href="/resume.html" class="nav-link nav-item">resume</a> 
-                    <a href="/about.html" class="nav-link nav-item">about</a>
-                    <a href="/portfolio.html" class="nav-link">portfolio</a>
+                    <a href="index.html" class="nav-link nav-item">home</a>
+                    <a href="resume.html" class="nav-link nav-item">resume</a> 
+                    <a href="about.html" class="nav-link nav-item">about</a>
+                    <a href="portfolio.html" class="nav-link">portfolio</a>
                 </nav>
                 
-                
+                <nav class="nav justify-content-center">
+                    <a href="https://github.com/u/ashleyarrant" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Find me on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/ashleyarrant" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="about.html#contact" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Contact me"><i class="far fa-envelope"></i></a>
+                </nav>
                 
             </footer>
         

@@ -30,3 +30,8 @@ img {
     height:1px;
     border-top:solid 1px;
 }
+
+.card-columns {
+    columns:2;
+    column-gap:2rem;
+}

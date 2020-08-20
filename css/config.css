@@ -4,16 +4,24 @@ body {
     font-size:1.25em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Anonymous Pro', monospace;
+a {
+    color:#B0153F;
+    transition:.15s ease-in-out;
 }
 
-.container-fluid {
+a:hover{
+    color:#DEDEDE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Cinzel Decorative', monospace;
+}
+
+[class|=container] {
     background-color:#fff;
 }
 
 .active {
-    color:red;
     font-weight:bold;
 }
 
@@ -31,7 +39,16 @@ img {
     border-top:solid 1px;
 }
 
-.card-columns {
-    columns:2;
-    column-gap:2rem;
+.btn-primary {
+    background-color:#B0153F;
+    border-color:#B0153F;
+}
+
+.btn-primary:hover {
+    background-color:#CB6C7C;
+    border-color:#CB6C7C;
+}
+
+.bg-light {
+    background-color:#fff!important;
 }

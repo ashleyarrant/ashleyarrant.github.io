@@ -7,7 +7,7 @@
         <title>Ashley Arrant | Portfolio</title>
         
         <!-- stylesheets & fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Anonymous+Pro:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Cinzel+Decorative:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/config.css" />
@@ -23,18 +23,18 @@
         
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-xl">
             
-            <nav class="navbar navbar-expand-md navbar-light" role="navigation">
-                <a href="index.html" class="navbar-brand"><img src="https://via.placeholder.com/30" height="30"/> Ashley Arrant</a>
+            <nav class="navbar navbar-expand-md navbar-light sticky-top bg-light" role="navigation">
+                <a href="/index.html" class="navbar-brand"><img src="https://via.placeholder.com/30" height="30"/> Ashley Arrant</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse  justify-content-end text-right" id="navcontent">
-                    <a href="resume.html" class="nav-link nav-item">Resume</a>
-                    <a href="about.html" class="nav-link nav-item">About</a>
-                    <a href="portfolio.html" class="nav-link nav-item">Portfolio</a>
+                    <a href="/resume.html" class="nav-link nav-item">Resume</a>
+                    <a href="/about.html" class="nav-link nav-item">About</a>
+                    <a href="/portfolio.html" class="nav-link nav-item">Portfolio</a>
                 </div>
             </nav>
             
@@ -49,7 +49,7 @@
                 </ol>
             </nav>
             
-            <div class="card-columns m-5 justify-content-between" data-aos="fade-up">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3" data-aos="fade-up">
                 
 <!--
                 <div class="card mb-5">
@@ -63,32 +63,34 @@
                 </div> 
 -->
                 
-                <div class="card mb-5">
-                    <img src="https://via.placeholder.com/200x100" alt="..." class="card-img" />
-                    <div class="card-body">
-                        <h2 class="card-title">Senior Capstone</h2>
-                        <p>A short project description.</p>
-                        <p class="m-0"><a href="school/capstone.html" class="btn btn-primary" role="button">View project</a></p>
-                    </div>
-                    <footer class="card-footer small">Spring 2020</footer>
-                </div> 
+                <div class="col">
+                    <div class="card mb-5">
+                        <img src="https://via.placeholder.com/200x100" alt="..." class="card-img" />
+                        <div class="card-body">
+                            <h2 class="card-title">Senior Capstone</h2>
+                            <p>A short project description.</p>
+                            <p class="m-0"><a href="school/capstone.html" class="btn btn-primary" role="button">View project</a></p>
+                        </div>
+                        <footer class="card-footer small">Spring 2020</footer>
+                    </div> 
+                </div>
                 
             </div>
             
-            <footer class="text-center p-4" data-aos="fade" data-aos-anchor-placement="top-bottom">
+            <footer class="text-center p-4" data-aos="fade" data-aos-anchor-placement="center-bottom">
                 <h1>Ashley Arrant</h1>
                 
                 <nav class="nav justify-content-center">
-                    <a href="index.html" class="nav-link nav-item">home</a>
-                    <a href="resume.html" class="nav-link nav-item">resume</a> 
-                    <a href="about.html" class="nav-link nav-item">about</a>
-                    <a href="portfolio.html" class="nav-link">portfolio</a>
+                    <a href="/index.html" class="nav-link nav-item">home</a>
+                    <a href="/resume.html" class="nav-link nav-item">resume</a> 
+                    <a href="/about.html" class="nav-link nav-item">about</a>
+                    <a href="/portfolio.html" class="nav-link">portfolio</a>
                 </nav>
                 
                 <nav class="nav justify-content-center">
                     <a href="https://github.com/u/ashleyarrant" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Find me on GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/ashleyarrant" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="about.html#contact" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Contact me"><i class="far fa-envelope"></i></a>
+                    <a href="/about.html#contact" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Contact me"><i class="far fa-envelope"></i></a>
                 </nav>
                 
             </footer>

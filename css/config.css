@@ -1,6 +1,6 @@
 body {
     font-family:'Open Sans', sans-serif;
-    background-color:#efefef;
+    background-color:#dedede;
     font-size:1.25em;
 }
 
@@ -13,8 +13,8 @@ a:hover{
     color:#DEDEDE;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Cinzel Decorative', monospace;
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family:'Cinzel Decorative', cursive;
 }
 
 [class|=container] {
@@ -51,4 +51,12 @@ img {
 
 .bg-light {
     background-color:#fff!important;
+}
+
+.jumbotron {
+    background-color:#DEDEDE;
+    background-image: url(/images/pexels-cottonbro-4058772.jpg);
+    background-size:cover;
+    background-position:center center;
+    color:#fff;
 }

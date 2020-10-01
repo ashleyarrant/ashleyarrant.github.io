@@ -37,6 +37,7 @@ img {
 .divide {
     height:1px;
     border-top:solid 1px;
+    border-color:white;
 }
 
 .btn-primary {
@@ -55,8 +56,9 @@ img {
 
 .jumbotron {
     background-color:#DEDEDE;
-    background-image: url(/images/pexels-cottonbro-4058772.jpg);
+    background-image: url(/images/seattle2.png);
     background-size:cover;
     background-position:center center;
     color:#fff;
+    text-align:right!important;
 }

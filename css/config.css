@@ -1,16 +1,23 @@
+:root {
+    --grey: #DEDEDE;
+    --darkred: #B0153F;
+    --lightred: #CB6C7C;
+}
+
 body {
     font-family:'Open Sans', sans-serif;
-    background-color:#dedede;
+    background-color:#fff;
     font-size:1.25em;
 }
 
 a {
-    color:#B0153F;
+    color:var(--darkred);
     transition:.15s ease-in-out;
 }
 
 a:hover{
-    color:#DEDEDE;
+    color:var(--grey);
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar-brand {
@@ -26,7 +33,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .lead {
-    font-size:1.25em;
+    font-size:1.15em;
 }
 
 img {
@@ -41,24 +48,45 @@ img {
 }
 
 .btn-primary {
-    background-color:#B0153F;
-    border-color:#B0153F;
+    background-color:var(--darkred);
+    border-color:var(--darkred);
 }
 
 .btn-primary:hover {
-    background-color:#CB6C7C;
-    border-color:#CB6C7C;
+    background-color:var(--lightred);
+    border-color:var(--lightred);
 }
 
 .bg-light {
     background-color:#fff!important;
 }
 
-.jumbotron {
-    background-color:#DEDEDE;
-    background-image: url(/images/seattle2.png);
+header.jumbotron {
+    background-color:var(--grey);
+    background-image: url(/images/seattle-cropped.png);
     background-size:cover;
     background-position:center center;
     color:#fff;
     text-align:right!important;
+}
+
+.nav-pills .active {
+    background-color:var(--darkred)!important;
+}
+
+.link-plaintext, .link-plaintext:hover {
+    color:inherit;
+    text-decoration:none;
+}
+
+#contactMethods a {
+    display:inline-block;
+    font-size:2em;
+    padding:0 .3em;
+    border-radius:100%;
+    margin:0 10px;
+}
+
+.divide {
+    border-top:solid 1px rgba(176, 21, 63,0.5);
 }

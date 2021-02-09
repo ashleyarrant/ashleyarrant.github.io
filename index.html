@@ -4,20 +4,18 @@
         <!-- meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Home | Ashley Arrant</title>
-        <link rel="shortcut icon" href="/images/Logo-2020.png" type="image/x-icon" />
+        <title>Ashley Arrant &mdash; Home</title>
+        <link rel="shortcut icon" href="/images/Logo2020-transparent.png" type="image/x-icon" />
         
         <!-- stylesheets & fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Cinzel+Decorative:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/config.css" />
         
-        <!-- jQuery plugins & scripts -->
+        <!-- jQuery plugins & scripts -->   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://kit.fontawesome.com/f01a108247.js" crossorigin="anonymous"></script>
         <script src="/scripts/config.js"></script>
         
@@ -25,94 +23,61 @@
     <body>
         <div class="container-xl">
             
-            <nav class="navbar navbar-expand-md navbar-light sticky-top bg-light" role="navigation">
+            <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
                 <a href="/" class="navbar-brand"><img src="/images/Logo2020.png" width="40" /> Ashley Arrant</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse offcanvas-collapse navbar-collapse justify-content-end text-right bg-light p-3 p-md-0" id="navcontent">
-                    <a href="/resume.html" class="nav-link nav-item p-3 py-md-2">Resume</a>
-                    <a href="/about.html" class="nav-link nav-item p-3 py-md-2">About</a>
-                    <a href="/portfolio.html" class="nav-link nav-item p-3 py-md-2">Portfolio</a>
-                    <a href="/about.html#contact" class="nav-link nav-item d-md-none p-3">Contact</a>
-                    <div class="divide d-md-none"></div>
-                    <a href="https://github.com/ashleyarrant" class="nav-item nav-link d-md-none p-3">Github</a>
-                    <a href="https://linkedin.com/in/ashleyarrant" class="nav-item nav-link d-md-none p-3">Linkedin</a>
                 </div>
             </nav>
             
-            <div class="jumbotron mb-0" data-aos="fade-up">
-                <h1 class="display-1 my-5">Hi, I'm Ashley.</h1>
-                <h1 class="my-5">I'm an aspiring web developer with 8+ years of self-taught experience</h1>
+            <header class="jumbotron mb-0 clearfix">
+                <h1 class="display-3 mt-5">Hi, I'm Ashley.</h1>
+                <h2 class="mb-5 w-75 float-right">Aspiring web developer with 5+ years of self-taught experience</h2>
+            </header>
+            
+            <div class="row my-5 p-3 d-flex flex-wrap align-items-center">
+                <div class="col-md-9 text-center">
+                    <h2>Who is Ashley?</h2>
+                    <p class="lead">I found my home between lines of code in 2012 and have been studying feverishly ever since. I'm always on the hunt for opportunities to improve my skills and expand my knowledge base.</p>
+                    <a href="/about.html" class="btn btn-primary">View Profile</a>
+                    <a href="/resume.html" class="btn btn-secondary">View Resume</a>
+                </div>
+                <div class="col d-none d-md-block">
+                    <img src="/images/me.jpeg"/>
+                </div>
             </div>
             
-            <div class="row my-5" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <div class="col-lg-6 p-5">
-                    <h1 class="text-left">Current Project</h1>
-                    <div class="row">
-                        <div class="col-sm-6 text-center">
-                            <img src="https://via.placeholder.com/200" alt="Current project" />
-                        </div>
-                        <div class="col-sm">
-                            <p>Here's some details about the project.</p>
-                            <div class="progress mb-3" style="height:30px;">
-                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                            </div>
-                            <p><a href="#" class="btn btn-primary">View project</a></p>
-                        </div>
+            <div class="row my-5 p-3 text-center">
+                <h2 class="col-12">Featured Projects</h2>
+                <div class="col-12">
+                    <div id="portfolioItems" class="row" data-limit="3">
                     </div>
                 </div>
+                <div class="col-12"><a href="/portfolio.html" class="btn btn-primary btn-lg">See All Projects</a></div>
                 
-                <div class="col-lg-6 p-5">
-                    <h1 class="text-left">Lastest Project</h1>
-                    <div class="row">
-                        <div class="col-sm-6 text-center">
-                            <img src="https://via.placeholder.com/200" alt="Current project" />
-                        </div>
-                        <div class="col-sm">
-                            <p>Here's some details about the project. This one should proably be a bit longer.</p>
-                            <p><a href="#" class="btn btn-primary">View project</a></p>
-                        </div>
-                    </div>
+            </div>
+            
+            <div class="row my-5 p-3 d-flex flex-wrap align-items-center text-center">
+                <div class="col-lg"><h2 class="mb-0">Get in contact with me</h2></div>
+                <div id="contactMethods" class="col-lg">
+                    <a href="mailto:ashleyarrant96@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Send me an email"><i class="far fa-envelope"></i></a>
+                    <a href="https://github.com/ashleyarrant" data-toggle="tooltip" data-placement="bottom" title="Find me on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ashleyarrant" data-toggle="tooltip" data-placement="bottom" title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             
-            <div class="row text-center p-5 bg-light my-5" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <h1 class="col-12 pb-3">Proficiencies</h1>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/100" class="mb-3"/>
-                    <h3>Minimalism</h3>
-                    <p>My designs are clean, simple, and organized with just enough pizzaz to dazzle.</p>
+            <footer class="row p-4">
+                <div class="col-md text-center text-md-left">
+                    <a href="/" class="link-plaintext"><h4>Ashley Arrant</h4></a>
                 </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/100" class="mb-3"/>
-                    <h3>Responsive Design</h3>
-                    <p>I make sure every site I build looks good on every device, every browser, every time.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/100" class="mb-3"/>
-                    <h3>Accessability</h3>
-                    <p>I strive to create web solutions that can be used and enjoyed by anybody, anywhere, any time.</p>
-                </div>
-            </div>
-            
-            <footer class="text-center p-4" data-aos="fade" data-aos-anchor-placement="center-bottom">
-                <h1>Ashley Arrant</h1>
-                
-                <nav class="nav justify-content-center d-none d-md-flex">
-                    <a href="/" class="nav-link nav-item">home</a>
-                    <a href="/resume.html" class="nav-link nav-item">resume</a> 
-                    <a href="/about.html" class="nav-link nav-item">about</a>
-                    <a href="/portfolio.html" class="nav-link">portfolio</a>
-                </nav>
-                
-                <nav class="nav justify-content-center d-none d-md-flex">
-                    <a href="https://github.com/ashleyarrant" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Find me on GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/ashleyarrant" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="/about.html#contact" class="nav-link nav-item" data-toggle="tooltip" data-placement="top" title="Contact me"><i class="far fa-envelope"></i></a>
-                </nav>
-                
+                <div class="col-md">
+                    <nav class="nav text-lowercase justify-content-center justify-content-md-end">
+                        <a href="/" class="nav-link nav-item">home</a>
+                    </nav>
+                </div>                
             </footer>
         
         </div> <!-- end container -->

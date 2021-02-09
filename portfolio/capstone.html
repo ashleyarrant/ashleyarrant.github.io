@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ashley Arrant &mdash; CCSE Hackathon</title>
+        <link rel="shortcut icon" href="/images/Logo2020-transparent.png" type="image/x-icon" />
+        
+        <!-- stylesheets & fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Cinzel+Decorative:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/config.css" />
+        
+        <!-- jQuery plugins & scripts -->   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/f01a108247.js" crossorigin="anonymous"></script>
+		<script src="/scripts/config.js"></script>
+        
+    </head>
+    <body>
+        <div class="container-xl">
+            
+            <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+                <a href="/" class="navbar-brand"><img src="/images/Logo2020.png" width="40" /> Ashley Arrant</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse offcanvas-collapse navbar-collapse justify-content-end text-right bg-light p-3 p-md-0" id="navcontent">
+                </div>
+            </nav>
+            
+            <header class="jumbotron mb-0" style="text-align:center!important;">
+                <h1 class="display-4">CCSE Hackathon</h1>
+                <p class="lead">Fall 2020 | IT Senior Capstone</p>
+                <p class="small"><strong>Status:</strong> Complete</p>
+                <a href="#" class="btn btn-secondary btn-lg">View on GitHub</a>
+            </header>
+            
+            <div class="row p-3 my-5">
+                <div class="col-md-6 mb-3">
+                    <h3>Project Goal</h3>
+                  <p>To create a web application with both front-end and back-end functionality within the span of a semester (15 weeks).</p>
+                    <h3>Project Timeframe</h3>
+                    <p class="mb-0">August &ndash; November 2020</p>
+                </div>
+              <div class="col-md-6 mb-3">
+              	<h3>Challenges</h3>
+                  <ul>
+                      <li>Collaborating with a client to ensure their needs are met.</li>
+                      <li>Equally delegating work between team members.</li>
+                      <li>Communicating effectively with the client and other team members.</li>
+                      <li>Creating a fully functioning web application from start to finish.</li>
+				  </ul>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h3>Team</h3>
+                    <ul>
+                        <li><strong>Ashley Arrant:</strong> team co-leader, lead front-end developer</li>
+                        <li><strong>Cameron Williams:</strong> technical writer, Discord administrator</li>
+                        <li><strong>Carter Mauro:</strong> UI designer, Discord administrator</li>
+                        <li><strong>Matt Williamson:</strong> lead database administrator</li>
+                        <li><strong>Zachary Taylor:</strong> team co-leader, back-end designer</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h3>Successes</h3>
+                    <ul>
+                        <li>First experiment with creating a website was a success</li>
+                        <li>Many features were completed early and worked as anticipated</li>
+                        <li>Additional "nice to have" features were implemented</li>
+                        <li>Clients expectations were exceeded, recieving an A on the project and in the course</li>
+                    </ul>
+                </div>
+            </div>
+            
+          <div class="row p-3 my-5">
+              <div class="col-12">
+                <h2>Overview</h2>
+                  <p>Each Spring and Fall sesmester, the College of Computing and Software Engineering hosts their Hackathon event &mdash; where local companies sponsor teams of students all competing to win prizes, recognition, and possible career opportunities. At the time of this project, the current method of managing sponsors, students, and event details required the use of multiple programs and put a large strain on the event coordinators.</p>
+                <p>Our goal for this project was to create a single web applicaiton that would allow students to register for the event, set up teams, and select their own sponsors. Our system also had adminstrative capabilities such as team management, event and sponsor updates, event scheduling, and more.</p>
+                </div>
+              
+                <h2 class="col-12 mt-5">Planning Phase</h2>
+                <div class="col-12">
+                    <aside class="float-right bg-info p-5 ml-4" style="height:300px; width:300px;">
+                        SCREENSHOT OF GANTT CHART W/ POSSIBLE DOWNLOAD LINK
+                    </aside>
+                    <p>During the planning phase, we quickly realized that our team had complimentary skills. This allowed us to effectively design each element of the application in a way that would ensure that they work together. The requirements given to us by the client were as follows:</p>
+                    <ul>
+                        <li>Students must be able to create accounts and manage their information</li>
+                        <li>Students must be able to create and manage their teams</li>
+                        <li>Teams must be able to register for sponsors/programs</li>
+                        <li>Admin must be able to manage events and sponsor selection</li>
+                        <li>Admin must bea able to declare and display winning teams</li>
+                        <li>Technical and user documentation must be provided for handoff in Spring 2021</li>
+                        <li>Create a Discord server that will serve as an online community (optional)</li>
+                    </ul>
+                    <p>The only material we were provided to complete this project was a remote server running Ubuntu 18.04. Thankfully, we had all had some degree of experience with Ubuntu, and were therefore able to set up preliminary databases and host our site files with little to no issue. From here, we broke the project up into three milestones:</p>
+                    <ol>
+                        <li><strong>Account registration</strong> &mdash; creating a webform and accompanying database that allowed a collection of important data; populate student dashboard</li>
+                        <li><strong>Admin capabilities</strong> &mdash; creating a separate administrator login and dashboard with required functionalities</li>
+                        <li><strong>Final working solution</strong> &mdash; finish out base features and create handoff/technical documentation</li>
+                    </ol>
+                    <p>Each milestone was approximately 4 weeks long, with weekly meetings with our client/sponsor to ensure our project was on the right path.</p>
+                </div>
+              
+              <h2 class="col-12 mt-5">Development Phase</h2>
+              <div class="col-12">
+                  <p>This was where the real fun began. </p>
+              </div>
+              
+              <h2 class="col-12 mt-5">Testing & Implementation</h2>
+            </div>
+            
+            <div class="row my-5 p-3 d-flex flex-wrap align-items-center text-center">
+                <div class="col-lg"><h2 class="mb-0">Get in contact with me</h2></div>
+                <div id="contactMethods" class="col-lg">
+                    <a href="mailto:ashleyarrant96@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Send me an email"><i class="far fa-envelope"></i></a>
+                    <a href="https://github.com/ashleyarrant" data-toggle="tooltip" data-placement="bottom" title="Find me on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ashleyarrant" data-toggle="tooltip" data-placement="bottom" title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <footer class="row p-4">
+                <div class="col-md text-center text-md-left">
+                    <a href="/" class="link-plaintext"><h4>Ashley Arrant</h4></a>
+                </div>
+                <div class="col-md">
+                    <nav class="nav text-lowercase justify-content-center justify-content-md-end">
+                        <a href="/" class="nav-link nav-item">home</a>
+                    </nav>
+                </div>                
+            </footer>
+        
+        </div> <!-- end container -->
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+    "items":[
+        {
+            "projName": "Hackathon Community App",
+            "shortDesc":"A web application built for my senior capstone project.",
+            "longDesc": "A project done for my senior capstone project, this web applicaiton was designed to handle account management and event registration for Kennesaw State University's bi-annual Hackathon events.",
+            "link": "/portfolio/capstone.html",
+            "imageLink":"/images/capstone-home.jpg"
+        },
+        {
+            "projName": "Mobile Website Redesign",
+            "shortDesc":"A mobile-optimized redesign using the Bootstrap framework.",
+            "longDesc": "For this project, I redesigned the website for a local apartment complex with a mobile-first approach using Bootstrap.",
+            "link": "/portfolio/altamira.html",
+            "imageLink":"/images/comingsoon.png"
+        },
+        {
+            "projName": "Weekly Schedule Generator",
+            "shortDesc":"A web app used to generate a weekly schedule.",
+            "longDesc": "This web application is used to generate a weekly schedule with customization options such as font choice, color codes, time constraints, and more.",
+            "link": "/portfolio/schedule.html",
+            "imageLink":"/images/demo-mockup.png"
+        }
+    ]
+}

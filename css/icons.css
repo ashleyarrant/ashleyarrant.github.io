@@ -1,0 +1,51 @@
+.icon::before, .icon::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color:gold;
+    text-shadow: 0px 0px 1px var(--grey);
+}
+
+.onestar::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content:"";
+}
+
+.onestar::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    content: ""
+}
+
+.twostar::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content:"";
+}
+
+.twostar::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    content: ""
+}
+
+.threestar::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content:"";
+}
+
+.threestar::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    content: ""
+}
+
+.fourstar::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content:"";
+}

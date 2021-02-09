@@ -1,0 +1,16 @@
+{
+    "links": [
+        {
+            "name":"Resume",
+            "path":"/resume.html"
+        },
+        {
+            "name":"About",
+            "path":"/about.html"
+        },
+        {
+            "name":"Portfolio",
+            "path":"/portfolio.html"
+        }
+    ]
+}

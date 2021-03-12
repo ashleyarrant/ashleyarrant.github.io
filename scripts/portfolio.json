@@ -19,7 +19,7 @@
             "shortDesc":"A web app used to generate a weekly schedule.",
             "longDesc": "This web application is used to generate a weekly schedule with customization options such as font choice, color codes, time constraints, and more.",
             "link": "/portfolio/schedule.html",
-            "imageLink":"/images/demo-mockup.png"
+            "imageLink":"/images/comingsoon.png"
         }
     ]
 }

@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     font-family:'Cinzel Decorative', cursive;
 }
 
+ul li {
+    list-style-type: circle;
+}
+
 [class|=container] {
     background-color:#fff;
 }
@@ -89,4 +93,16 @@ header.jumbotron {
 
 .divide {
     border-top:solid 1px rgba(176, 21, 63,0.5);
+}
+
+.text-primary {
+    color:var(--darkred)!important;
+}
+
+.border-primary {
+    border-color: var(--darkred)!important;
+}
+
+.lead strong {
+    font-weight:bold;
 }
